@@ -126,6 +126,12 @@ Data Structure choices and Performance Aspects:
          known bug with 11x threads and clang that causes an exception on
          thread instantiation with binding a function.  Compile w/clang
          for clean errors, switch to gcc for release.
+      2.A) UPDATE: Apparently they've fixed it since I wrote this.
+         Will be interesting to do some benchmarking w/CLANG once I'm not
+         on a VM and can do some bare-metal testing
+      3) RDTSC on an Oracle VM will give you incorrect results as they
+         virtualize calls to the TSC.  3+ usec on most operations in this
+         book instead of the 300-600 nanosecond on bare metal.
 
 Performance statistics:
    MidQuote print went from 3100 nanoseconds down to 679 median by
