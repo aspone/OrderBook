@@ -466,7 +466,7 @@ sub printBook {
 
 #------------------------------------------------------------------------------
 sub main {
-   for (my $i = 0; $i < 25000; ++$i) {
+   for (my $i = 0; $i < 75000; ++$i) {
       # &printBook();
 
       # 1% chance of any of the bad things happening

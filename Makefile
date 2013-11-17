@@ -37,7 +37,7 @@ profile:
 	g++ -O3 -DNDEBUG -DPROFILE $(COMMON) $(SOURCES) main.cpp -o OrderBookProcessor
 
 lib:
-	g++ -O3 -DNDEBUG $(COMMON) $(SOURCES) -shared -o OrderBook.lib
+	g++ -O3 -DNDEBUG $(COMMON) $(SOURCES) -shared -o libOrderBook.so
 
 grind:
 	$(CC) -g -O3 -DNDEBUG -DPROFILE $(COMMON) $(SOURCES) main.cpp -o OrderBookProcessor
@@ -46,3 +46,4 @@ clean:
 	rm -f OrderBookProcessor
 	rm -f UtilityTester
 	rm -f *.out
+	rm -f *.so
